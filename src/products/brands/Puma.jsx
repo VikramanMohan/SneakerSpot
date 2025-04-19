@@ -16,7 +16,7 @@ const Puma = () => {
                         <p className="text-white lg:pb-0">Princing $140.00</p>
                         </div>
                         <div className="relative overflow-hidden">
-                        <img src="../../../public/pumaboximg.jpg" alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
+                        <img src="/public/pumaboximg.jpg" alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
                         </div>
                     </div>
                         
@@ -29,7 +29,7 @@ const Puma = () => {
                     </div>
                     <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative overflow-hidden">
                     <div className="relative top-3 w-[60%]">
-                        <img src="../../../public/pumaimg1.png" alt="" className="w-full transition-all hover:scale-110" />
+                        <img src="/public/pumaimg1.png" alt="" className="w-full transition-all hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -47,7 +47,7 @@ const Puma = () => {
                 </div>
                 <div className="relative flex items-center justify-center h-64 overflow-hidden bg-gradient-to-r from-red-400 to-orange-300 ">
                         <div className="flex items-center justify-center">
-                        <img src="../../../public/pumaimg2.png" alt="" className="w-[60%] transition-all mt-10 hover:scale-110" />
+                        <img src="/public/pumaimg2.png" alt="" className="w-[60%] transition-all mt-10 hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">STREAT</p>
@@ -68,7 +68,7 @@ const Puma = () => {
                 </div>
                 <div className="bg-[#232227] h-64 flex justify-center items-center relative ">
                         <div className="relative flex items-center justify-center top-4">
-                        <img src="../../../public/pumaimg3.png" alt="" className="w-[60%] transition-all hover:scale-110"/>
+                        <img src="/public/pumaimg3.png" alt="" className="w-[60%] transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white ">STREAT</p>
@@ -88,7 +88,7 @@ const Puma = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative mt-6 lg:mt-0 overflow-hidden">
                     <div className="relative w-[60%] top-4">
-                        <img src="../../../public/pumaimg4.png" alt="" className="w-full transition-all hover:scale-110 " />
+                        <img src="/public/pumaimg4.png" alt="" className="w-full transition-all hover:scale-110 " />
                     </div>
                     <div className="absolute flex items-center justify-between w-full px-6 top-6">
                     <p className="text-white">DAY-TO-DAY</p>
@@ -105,7 +105,7 @@ const Puma = () => {
                 </div>
                 <div className="bg-[#232227] mt-6 h-64 flex justify-center items-center relative lg:mt-0">
                         <div className="relative w-[60%] top-3 ">
-                            <img src="../../../public/pumaimg5.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src="/public/pumaimg5.png" alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -121,7 +121,7 @@ const Puma = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative  lg:mt-0 mt-6 overflow-hidden">
                         <div className="relative w-[55%] top-4 ">
-                            <img src="../../../public/pumaimg6.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src="/public/pumaimg6.png" alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>

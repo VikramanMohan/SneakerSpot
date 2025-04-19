@@ -1,7 +1,7 @@
 import React from "react";
 import { HiMagnifyingGlass, HiPlus } from "react-icons/hi2";
-import adidasImg1 from "../../public/adidasimg1.png";
-import adidasImg2 from "../../public/adidasimg2.png";
+import adidasImg1 from "/public/adidasimg1.png";
+import adidasImg2 from "/public/adidasimg2.png";
 import { BiCheck } from "react-icons/bi";
 
 const Shopping = () => {
