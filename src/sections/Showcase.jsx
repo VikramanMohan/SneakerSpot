@@ -81,14 +81,14 @@ const Showcase = () => {
               />
           
               {/* Promo Badge  */}
-              <div className="absolute flex flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-5 lg:h-30 lg:w-30 h-25 w-25 top-20 left-10 lg:top-25 lg:left-80  lg:z-50 z-40" data-aos="fade-right">
+              <div className="absolute flex flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-5 lg:h-30 lg:w-30 h-25 w-25 top-20 left-10 md:left-[240px] lg:top-25 lg:left-80  lg:z-50 z-40" data-aos="fade-right">
                 <p className="text-[12px] text-white text- lg:text-sm">promo:nike</p>
                 <p className="text-2xl font-bold text-gray-900">40%</p>
                 <p className="text-2xl font-bold text-white">sale</p>  
               </div>
           
               {/* Button  */}
-              <button className="text-white bg-gradient-to-r from-[#ff626d] to-[#fcad72] rounded-full shadow-5xl absolute top-40 right-18 w-10 h-10 lg:top-42 lg:right-85 lg:z-50 z-40 flex items-center justify-center " data-aos="fade-left">
+              <button className="text-white bg-gradient-to-r from-[#ff626d] to-[#fcad72] rounded-full shadow-5xl absolute top-40 right-18 w-10 h-10 lg:top-42 lg:right-85 lg:z-50 md:right-[310px] z-40 flex items-center justify-center " data-aos="fade-left">
                 <HiPlus size={20} />
               </button>
             </div>
@@ -107,7 +107,7 @@ const Showcase = () => {
           
           ))}
         </Swiper>
-        <div className="flex justify-center mt-4 custom-pagination"></div>
+        <div className="flex justify-center mt-4 custom-pagination "></div>
       </div>
     </div>
   );
