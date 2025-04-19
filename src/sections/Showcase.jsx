@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../../src/styles.css";
 const images = [
+<<<<<<< HEAD
   { src: "/public/img2.png", price: "$100.00", name: "AIR JORDAN"},
   { src: "/public/img7.png", price: "$120.00", name: "NIKE MAX",  },
   { src: "/public/showcase.png", price: "$140.00", name: "ULTRA BOOST", },
@@ -14,6 +15,16 @@ const images1 = [
   { src: "/public/showcase.png", id:"01" },
   { src: "/public/img2.png", id:"02" },
   { src: "/public/img7.png", id:"03" },
+=======
+  { src: "../../public/img2.png", price: "$100.00", name: "AIR JORDAN"},
+  { src: "../../public/img7.png", price: "$120.00", name: "NIKE MAX",  },
+  { src: "../../public/showcase.png", price: "$140.00", name: "ULTRA BOOST", },
+];
+const images1 = [
+  { src: "../../public/showcase.png", id:"01" },
+  { src: "../../public/img2.png", id:"02" },
+  { src: "../../public/img7.png", id:"03" },
+>>>>>>> fc6f8d38f206573a3087267389980d272fbdcd7f
 ];
 
 const Showcase = () => {

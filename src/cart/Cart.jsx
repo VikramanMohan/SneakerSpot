@@ -13,7 +13,11 @@ const Cart = () => {
             <div className='flex flex-col md:flex-row items-center w-full lg:w-[1200px] bg-[#333235] rounded-2xl border-3 border-[#333235] hover:border-red-500 transition-all p-3  mb-4' data-aos='fade-up'>
               {/* Product Image */}
               <div className='flex justify-center w-full p-3 md:w-auto'>
+<<<<<<< HEAD
                 <img src='/public/adidasimg2.png' className='w-28 md:w-40 lg:w-48' alt='Product' />
+=======
+                <img src='../../public/adidasimg2.png' className='w-28 md:w-40 lg:w-48' alt='Product' />
+>>>>>>> fc6f8d38f206573a3087267389980d272fbdcd7f
               </div>
                 <div className='w-full bg-[#4e4e50] h-0.5 lg:hidden md:hidden'></div>
               {/* Product Info */}
