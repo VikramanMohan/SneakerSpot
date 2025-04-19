@@ -59,11 +59,7 @@ const Profile = ({ closeProfile }) => {
 
         <div className="bg-[#232227] rounded-full h-34 w-34 flex items-center justify-center absolute bottom-5 z-10" data-aos="fade-down"></div>
         <img
-<<<<<<< HEAD
           src="/public/nikeimg1.png"
-=======
-          src="/public/NikeImg1.png"
->>>>>>> fc6f8d38f206573a3087267389980d272fbdcd7f
           className="absolute bottom-0 z-20 w-68 top-20"
           data-aos="fade-down" data-aos-delay="50"
           alt=""
