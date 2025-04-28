@@ -19,8 +19,6 @@ const images1 = [
 const Showcase = () => {
   const [index, setIndex] = useState(0);
 
-
-  
   return (
     <div className="bg-gradient-to-r from-[#ff626d] to-[#fcad72] lg:py-6 py-2 overflow-hidden">
       <div className="xl:w-4/5 px-6 max-w-[1400px] mx-auto flex flex-col justify-center">
