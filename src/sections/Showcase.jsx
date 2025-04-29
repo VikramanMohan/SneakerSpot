@@ -5,15 +5,18 @@ import { HiPlus } from "react-icons/hi";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../../src/styles.css";
+import NikeImg1 from "../assets/img2.png";
+import NikeImg2 from "../assets/img7.png";  
+import NikeImg3 from "../assets/showcase.png";
 const images = [
-  { src: "/public/img2.png", price: "$100.00", name: "AIR JORDAN"},
-  { src: "/public/img7.png", price: "$120.00", name: "NIKE MAX",  },
-  { src: "/public/showcase.png", price: "$140.00", name: "ULTRA BOOST", },
+  { src: NikeImg1, price: "$100.00", name: "AIR JORDAN"},
+  { src: NikeImg2, price: "$120.00", name: "NIKE MAX",  },
+  { src: NikeImg3, price: "$140.00", name: "ULTRA BOOST", },
 ];
 const images1 = [
-  { src: "/public/showcase.png", id:"01" },
-  { src: "/public/img2.png", id:"02" },
-  { src: "/public/img7.png", id:"03" },
+  { src: NikeImg3, id:"01" },
+  { src: NikeImg1 , id:"02" },
+  { src: NikeImg2, id:"03" },
 ];
 
 const Showcase = () => {
