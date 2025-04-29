@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { MdContentCopy } from "react-icons/md";
 import { IoClose } from "react-icons/io5"; // Import close icon
-
+import nikeImg from "../../assets/nikeimg1.png";
 const Profile = ({ closeProfile }) => {
   const profileRef = useRef(null);
 
@@ -59,10 +59,10 @@ const Profile = ({ closeProfile }) => {
 
         <div className="bg-[#232227] rounded-full h-34 w-34 flex items-center justify-center absolute bottom-5 z-10" data-aos="fade-down"></div>
         <img
-          src="/public/nikeimg1.png"
+          src={nikeImg}
           className="absolute bottom-0 z-20 w-68 top-20"
           data-aos="fade-down" data-aos-delay="50"
-          alt=""
+          alt="Nike"
         />
       </div>
     </div>
