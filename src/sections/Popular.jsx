@@ -2,6 +2,12 @@ import { HiPlus } from "react-icons/hi"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
 import { Autoplay, Pagination } from "swiper/modules";
+import AdidasImg from "../assets/adidasimg2.png";
+import Img1 from "../assets/img10.png";
+import Img2 from "../assets/imgbox2.jpg";
+import Img3 from "../assets/imgbox3.png";
+import Img4 from "../assets/img17.png";
+
 const responsive = {
     superLargeDesktop : {
         breakpoint: {max: 4000, min: 3000},
@@ -67,7 +73,7 @@ const Popular = () => {
                     </div>
                     <div className="items-center justify-center lg:flex">
                         <div className="relative top-3 left-15 lg:left-0 lg:w-[25rem] w-full">
-                            <img src="/public/adidasimg2.png" alt="" className="transition-all h-55 hover:scale-110" />
+                            <img src={AdidasImg} alt="AdidasImg" className="transition-all h-55 hover:scale-110" />
                             <div className="lg:flex hidden flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-4 absolute top-16 right-0">
                                 <p className="text-sm text-white">promo: nike</p>
                                 <p className="text-2xl font-bold">40%</p>
@@ -94,7 +100,7 @@ const Popular = () => {
                     <h2 className="px-20 py-20 text-5xl font-semibold text-white">Advantage.</h2>
                 </div>
                 <div className="bg-[#4e4e50] relative h-[20rem] lg:h-[33rem] flex flex-col justify-center">
-                    <img src="/public/img10.png" alt="" className="absolute -top-30 right-12 w-50" />
+                    <img src={Img1} alt="" className="absolute -top-30 right-12 w-50" />
                     <p className="px-8 text-xl font-bold text-gray-500">02</p>
                     <p className="px-8 py-4 text-xl font-bold text-white">footBall Shoes</p>
                     <p className="px-8 text-gray-500">We deliver immersive virtual reality experiences that encourages
@@ -122,7 +128,7 @@ const Popular = () => {
                     </div>
                 </div>
                 <div className="h-[33rem] relative overflow-hidden">
-                    <img src="/public/imgbox2.jpg" alt="" className="w-full h-full hover:scale-110"/>
+                    <img src={Img2} alt="" className="w-full h-full hover:scale-110"/>
                 </div>
             </div>
             <div>
@@ -131,7 +137,7 @@ const Popular = () => {
                     <p className="text-gray-500 lg:text-[7rem]  text-5xl font-bold">0 <span className="absolute text-white ">3</span></p>
                 </div> 
                 <div className="bg-[#4e4e50] relative  flex flex-col justify-center">
-                    <img src="/public/imgbox3.png" alt="" className="absolute -top-32 right-4 w-65" />
+                    <img src={Img3} alt="" className="absolute -top-32 right-4 w-65" />
                     <div className="px-8 py-16 pb-4 h-[20rem] lg:h-[30rem]">
                         <p className="text-xl font-bold text-gray-500">04</p>
                         <p className="py-4 text-xl font-bold text-white">gift certificates </p>
@@ -152,7 +158,7 @@ const Popular = () => {
         <img src="/public/LilNas.png" alt="" className="lg:absolute right-0 lg:h-[100%] bottom-0 object-cover" />
         <div className="hidden rounded-full shadow-2xl bg-gradient-to-r  from-[#ff626d] to-[#fcad72]  lg:flex items-center justify-center w-60 h-60 absolute xl:left-[10%] left-4">
             <div className="border border-gray-200 border-solid rounded-full h-52 w-52">
-                <img src="/public/img17.png" alt="" className="relative m-auto w-75 top-4"/>
+                <img src={Img4} alt="" className="relative m-auto w-75 top-4"/>
                 <button className="absolute px-2 font-semibold text-white bg-black rounded-lg lg:text-xl bottom-10 ">$ 300</button>
                 <button className="text-white bg-gradient-to-r  from-[#fcad72] to-[#ff626d] rounded-full absolute shadow-2xl top-8 right-0 z-10 w-10 h-10 flex items-center justify-center">
                     <HiPlus size={20}/>

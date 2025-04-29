@@ -9,7 +9,12 @@ import {IoIosArrowBack,
 
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-
+import UserImg1 from "../assets/user1.jpeg"
+import UserImg2 from "../assets/user2.jpg"
+import UserImg3 from "../assets/user3.jpeg"
+import UserImg4 from "../assets/user4.jpg"
+import UserImg5 from "../assets/user5.jpg"
+import UserImg6 from "../assets/user6.jpeg"
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
@@ -89,7 +94,7 @@ export default function Reviews  ()  {
                         </div>
 
                         <div className="shadow-2xl p-8 relative mt-16 bg-[#232227] ">
-                            <img src="/public/user2.jpg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg2} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-3 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Mark Ruffalo
@@ -109,7 +114,7 @@ export default function Reviews  ()  {
                         </div>
 
                         <div className="shadow-2xl p-8 relative mt-16  bg-[#232227]">
-                            <img src="/public/user3.jpeg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg3} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-3 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Jessica Dan
@@ -129,7 +134,7 @@ export default function Reviews  ()  {
                         </div>
 
                         <div className="shadow-2xl p-8 relative mt-16  bg-[#232227] ">
-                            <img src="/public/user5.jpg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg5} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-3 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Richard Gere
@@ -149,7 +154,7 @@ export default function Reviews  ()  {
                         </div>
 
                         <div className="shadow-2xl p-8 relative mt-16  bg-[#232227] ">
-                            <img src="/public/user4.jpg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg4} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-3 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Rukmini V
@@ -169,7 +174,7 @@ export default function Reviews  ()  {
                         </div>
 
                         <div className="shadow-2xl p-8 relative mt-16  bg-[#232227]  ">
-                            <img src="/public/user6.jpeg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg6} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-3 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Bully Maguire

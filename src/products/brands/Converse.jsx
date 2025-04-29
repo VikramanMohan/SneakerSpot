@@ -1,4 +1,11 @@
 import { HiHeart, HiOutlineShoppingBag } from "react-icons/hi2"
+import ConverseBoxImg from "../../assets/converseboximg1.jpg"
+import ConverseImg1 from "../../assets/converseimg1.png"
+import ConverseImg2 from "../../assets/converseimg2.png"
+import ConverseImg3 from "../../assets/converseimg3.png"
+import ConverseImg4 from "../../assets/converseimg4.png"
+import ConverseImg5 from "../../assets/converseimg5.png"
+import ConverseImg6 from "../../assets/converseimg6.png"
 const Converse = () => {
   return (
     <>
@@ -10,7 +17,7 @@ const Converse = () => {
                         <p className="text-white lg:pb-0">Princing $140.00</p>
                         </div>
                         <div className="relative overflow-hidden">
-                        <img src="/public/converseboximg1.jpg" alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
+                        <img src={ConverseBoxImg} alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
                         </div>
                     </div>
                         
@@ -23,7 +30,7 @@ const Converse = () => {
                     </div>
                     <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative overflow-hidden">
                     <div className="relative top-3 w-[60%]">
-                        <img src="/public/converseimg1.png" alt="" className="w-full transition-all hover:scale-110" />
+                        <img src={ConverseImg1} alt="" className="w-full transition-all hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -41,7 +48,7 @@ const Converse = () => {
                 </div>
                 <div className="relative flex items-center justify-center h-64 overflow-hidden bg-gradient-to-r from-red-400 to-orange-300 ">
                         <div className="flex items-center justify-center relative top-8 w-[60%]">
-                        <img src="/public/converseimg2.png" alt="" className="w-full transition-all hover:scale-110" />
+                        <img src={ConverseImg2} alt="" className="w-full transition-all hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">STREAT</p>
@@ -62,7 +69,7 @@ const Converse = () => {
                 </div>
                 <div className="bg-[#232227] h-64 flex justify-center items-center relative ">
                         <div className="flex items-center justify-center relative top-3 w-[60%]">
-                        <img src="/public/converseimg3.png" alt="" className="w-full transition-all hover:scale-110"/>
+                        <img src={ConverseImg3} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white ">STREAT</p>
@@ -82,7 +89,7 @@ const Converse = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative mt-6 lg:mt-0 overflow-hidden">
                     <div className="relative top-3 w-[60%]">
-                        <img src="/public/converseimg4.png" alt="" className="w-full transition-all hover:scale-110 " />
+                        <img src={ConverseImg4} alt="" className="w-full transition-all hover:scale-110 " />
                     </div>
                     <div className="absolute flex items-center justify-between w-full px-6 top-6">
                     <p className="text-white">DAY-TO-DAY</p>
@@ -99,7 +106,7 @@ const Converse = () => {
                 </div>
                 <div className="bg-[#232227] mt-6 h-64 flex justify-center items-center relative lg:mt-0">
                         <div className="relative top-3 w-[60%] scale-x-[-1]">
-                            <img src="/public/converseimg5.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src={ConverseImg5} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -115,7 +122,7 @@ const Converse = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative  lg:mt-0 mt-6 overflow-hidden">
                         <div className="relative top-3 w-[60%] ">
-                            <img src="/public/converseimg6.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src={ConverseImg6} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>

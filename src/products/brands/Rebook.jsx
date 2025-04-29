@@ -1,6 +1,11 @@
 import { HiHeart, HiOutlineShoppingBag } from "react-icons/hi2"
-
-import React from 'react'
+import ReebokBoxImg from "../../assets/reebokboximg.jpg"
+import ReebokImg1 from "../../assets/reebokimg1.png"
+import ReebokImg2 from "../../assets/reebokimg2.png"
+import ReebokImg3 from "../../assets/reebokimg3.webp"
+import ReebokImg4 from "../../assets/reebokimg4.png"
+import ReebokImg5 from "../../assets/reebokimg5.png"
+import ReebokImg6 from "../../assets/reebokimg6.png"
 
 const Rebook = () => {
   return (
@@ -13,7 +18,7 @@ const Rebook = () => {
                         <p className="text-white lg:pb-0">Princing $140.00</p>
                         </div>
                         <div className="relative overflow-hidden">
-                        <img src="/public/ReebokBoxImg.jpg" alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
+                        <img src={ReebokBoxImg} alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
                         </div>
                     </div>
                         
@@ -26,7 +31,7 @@ const Rebook = () => {
                     </div>
                     <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative overflow-hidden">
                     <div className="relative top-5 w-[60%]">
-                        <img src="/public/reebokimg2.png" alt="" className="w-full transition-all hover:scale-110" />
+                        <img src={ReebokImg2} alt="" className="w-full transition-all hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -44,7 +49,7 @@ const Rebook = () => {
                 </div>
                 <div className="relative flex items-center justify-center h-64 overflow-hidden bg-gradient-to-r from-red-400 to-orange-300 ">
                         <div className="flex items-center justify-center relative w-[60%]">
-                        <img src="/public/reebokimg1.png" alt="" className="w-full mt-5 transition-all hover:scale-110" />
+                        <img src={ReebokImg1} alt="" className="w-full mt-5 transition-all hover:scale-110" />
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">STREAT</p>
@@ -65,7 +70,7 @@ const Rebook = () => {
                 </div>
                 <div className="bg-[#232227] h-64 flex justify-center items-center relative ">
                         <div className="flex items-center justify-center relative top-3 w-[55%]">
-                        <img src="/public/reebokimg4.png" alt="" className="w-full transition-all hover:scale-110"/>
+                        <img src={ReebokImg4} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white ">STREAT</p>
@@ -85,7 +90,7 @@ const Rebook = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative mt-6 lg:mt-0 overflow-hidden">
                     <div className="relative top-5 w-[55%]">
-                        <img src="/public/reebokimg3.webp" alt="" className="w-full transition-all hover:scale-110 " />
+                        <img src={ReebokImg3} alt="" className="w-full transition-all hover:scale-110 " />
                     </div>
                     <div className="absolute flex items-center justify-between w-full px-6 top-6">
                     <p className="text-white">DAY-TO-DAY</p>
@@ -102,7 +107,7 @@ const Rebook = () => {
                 </div>
                 <div className="bg-[#232227] mt-6 h-64 flex justify-center items-center relative lg:mt-0">
                         <div className="relative top-5 w-[60%] ">
-                            <img src="/public/reebokimg5.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src={ReebokImg5} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>
@@ -118,7 +123,7 @@ const Rebook = () => {
                 </div>
                 <div className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative  lg:mt-0 mt-6 overflow-hidden">
                         <div className="relative top-5 w-[60%]">
-                            <img src="/public/reebokimg6.png" alt="" className="w-full transition-all hover:scale-110"/>
+                            <img src={ReebokImg6} alt="" className="w-full transition-all hover:scale-110"/>
                         </div>
                         <div className="absolute flex items-center justify-between w-full px-6 top-6">
                             <p className="text-white">DAY-TO-DAY</p>

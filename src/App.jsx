@@ -23,6 +23,8 @@ import Footer from "./sections/Footer";
         <Showcase/>
         <Product/>
         <BrandShoe/>
+        {/* <Cart/> */}
+        {/* <Shopping/> */}
         <Popular/>
         <Reviews/>
         <Footer/>

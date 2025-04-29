@@ -1,5 +1,7 @@
 import { HiHeart } from "react-icons/hi2"
-
+import NikeBoxImg from "../assets/imgbox.jpg"
+import AdidasImg from "../assets/adidasimg2.png"
+import PumaImg from "../assets/pumaimg1.png"
 const BrandShoe = () => {
   return (
     <div className="bg-[#333235]">
@@ -19,7 +21,7 @@ const BrandShoe = () => {
                             </div>
                             <div className="bg-[#232227] h-64 w-full flex items-center justify-center lg:mt-0 mt-6 relative overflow-hidden">
                                 <div className="w-[60%] relative top-5">
-                                    <img src="/public/adidasimg2.png" className="w-full transition-all hover:scale-110 " />
+                                    <img src={AdidasImg} className="w-full transition-all hover:scale-110 " />
                                 </div>
                                 <div className="absolute flex items-center justify-between w-full px-6 top-6">
                                     <p className="text-white">DAY-TO-DAY</p>
@@ -38,7 +40,7 @@ const BrandShoe = () => {
                             </div>
                             <div  className="bg-[#4e4e50] h-64 w-full flex items-center justify-center relative  lg:mt-0 mt-6 overflow-hidden">
                                 <div className="w-[60%] relative top-3">
-                                <img src="/public/pumaimg2.png" alt="" className="w-full transition-all hover:scale-110" />
+                                <img src={PumaImg} alt="" className="w-full transition-all hover:scale-110" />
                                 </div>
                                 <div className="absolute flex items-center justify-between w-full px-6 top-6">
                                     <p className="text-white">STREAT</p>
@@ -52,7 +54,7 @@ const BrandShoe = () => {
                     <p className="flex justify-between gap-2 px-6 pt-6 text-white">NIKE RYX 360 ORIGINAL <HiHeart/></p>
                     <p className="px-6 pb-8 text-white">Pricing $140.00</p>
                     <div className="relative overflow-hidden">
-                        <img src="/public/imgbox1.jpg" alt="" className="w-full lg:h-[34rem] hover:scale-110 transition-all " />
+                        <img src={NikeBoxImg} alt="NikeBoxImg" className="w-full lg:h-[34rem] hover:scale-110 transition-all " />
                     </div>
                 </div>
             </div>
