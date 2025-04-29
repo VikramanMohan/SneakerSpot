@@ -7,6 +7,7 @@ import Img1 from "../assets/img10.png";
 import Img2 from "../assets/imgbox2.jpg";
 import Img3 from "../assets/imgbox3.png";
 import Img4 from "../assets/img17.png";
+import Img5 from "../assets/LilNas.png"
 
 const responsive = {
     superLargeDesktop : {
@@ -155,7 +156,7 @@ const Popular = () => {
         </div>
 
         <section className="bg-gradient-to-r from-[#ff626d] to-[#ff0113] lg:h-80 relative flex flex-col items-center justify-center mt-10" data-aos="fade-up">
-        <img src="/public/LilNas.png" alt="" className="lg:absolute right-0 lg:h-[100%] bottom-0 object-cover" />
+                <img src={Img5} alt="" className="lg:absolute right-0 lg:h-[100%] bottom-0 object-cover" />
         <div className="hidden rounded-full shadow-2xl bg-gradient-to-r  from-[#ff626d] to-[#fcad72]  lg:flex items-center justify-center w-60 h-60 absolute xl:left-[10%] left-4">
             <div className="border border-gray-200 border-solid rounded-full h-52 w-52">
                 <img src={Img4} alt="" className="relative m-auto w-75 top-4"/>
