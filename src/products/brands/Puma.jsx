@@ -18,7 +18,7 @@ const Puma = () => {
                         <p className="text-white lg:pb-0">Princing $140.00</p>
                         </div>
                         <div className="relative overflow-hidden">
-                        <img src={PumaBoxImg} alt="" className="w-full h-[36rem] hover:scale-110 transition-all " />
+                        <img src={PumaBoxImg} alt="" className="w-full h-[36rem] hover:scale-110 transition-all object-cover" />
                         </div>
                     </div>
                         

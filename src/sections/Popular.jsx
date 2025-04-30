@@ -130,7 +130,7 @@ const Popular = () => {
                     </div>
                 </div>
                 <div className="h-[33rem] relative overflow-hidden">
-                    <img src={Img2} alt="" className="w-full h-full hover:scale-110"/>
+                    <img src={Img2} alt="" className="object-cover w-full h-full transition-all hover:scale-110"/>
                 </div>
             </div>
             <div>
