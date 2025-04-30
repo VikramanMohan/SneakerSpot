@@ -74,7 +74,7 @@ export default function Reviews  ()  {
                         ref={carouselRef}                        
                     >
                         <div className="shadow-2xl p-8 relative mt-16 bg-[#232227] ">
-                            <img src="/public/user1.jpeg" alt="" className="w-16 h-16 -mt-16 rounded-full" />
+                            <img src={UserImg1} alt="" className="w-16 h-16 -mt-16 rounded-full" />
                             <span className="flex items-center gap-5 py-4 text-xl text-white">
                                 <FaQuoteRight className="text-gray-500" />
                                 Karthik Raghu
