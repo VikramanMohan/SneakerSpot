@@ -8,6 +8,7 @@ import Img2 from "../assets/imgbox2.jpg";
 import Img3 from "../assets/imgbox3.png";
 import Img4 from "../assets/img17.png";
 import Img5 from "../assets/LilNas.png"
+import Img6 from "../assets/imgbox4.png";
 
 const responsive = {
     superLargeDesktop : {
@@ -116,7 +117,7 @@ const Popular = () => {
             <div>
                 <div className="bg-[#4e4e50] relative h-70 flex flex-col justify-end">
                     <div className="absolute flex justify-end -top-0 right-1">
-                        <img src="/public/imgbox4.png" alt="" className="w-40 "/>
+                        <img src={Img6} alt="SHOE" className="w-40 "/>
                     </div>
                     <div className="px-8 py-8 ">
                         <p className="text-xl font-bold text-gray-500">01</p>
