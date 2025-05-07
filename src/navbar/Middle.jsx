@@ -1,4 +1,3 @@
-
 const Middle = () => {
   let items = ["Home","Catalogs","Brands","Reviews", "Contact","Support"];
 return (
