@@ -95,17 +95,14 @@ const Showcase = () => {
             </div>
           
             {/* Text Section*/}
-            <div className="absolute z-50 lg:w-1/3 top-70 left-10 lg:top-70 lg:left-25">
+            <div className="absolute z-50 lg:w-1/3 top-70 left-10 lg:top-70 lg:left-35">
               <p className="mb-2 text-2xl font-bold text-gray-500 lg:mb-2:text-2xl">{item.id}</p>
-              <h2 className="mb-2 text-5xl font-bold text-white lg:mb-2:text-5xl">Brand Shoes.</h2>
-              <p className="mb-2 text-sm text-white lg:mb-2:text-2xl">
+              <h2 className="mb-2 text-3xl font-bold text-white lg:text-5xl">Brand Shoes.</h2>
+              <p className="mb-2 text-sm text-white">
                 We deliver immersive virtual reality experiences that encourage learning, creativity, and play at transport hubs, select retail, and culturally significant venues.
               </p>
             </div>
-            
-            
           </SwiperSlide>
-          
           ))}
         </Swiper>
         <div className="flex justify-center mt-4 custom-pagination "></div>
