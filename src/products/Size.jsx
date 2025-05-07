@@ -8,7 +8,7 @@ const Size = ({ onSelect }) => {
         {sizes.map((size) => (
           <button
             key={size}
-            className="px-3 py-1 text-white border bg-[#333235] rounded hover:bg-gradient-to-r from-[#ff626d] to-[#fcad72]"
+            className="px-3 py-1 text-white  bg-[#333235] rounded hover:bg-gradient-to-r from-[#ff626d] to-[#fcad72]"
             onClick={() => onSelect(size)}
           >
             {size}
