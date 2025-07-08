@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom"
+import Navbar from "../navbar/Navbar"
+import Footer from "../sections/Footer"
 
 const ErrorPage = () => {
   return (
+    <>
+    <Navbar/>
     <section className="relative flex items-center justify-center min-h-screen bg-[#333235]">
         <img src="/src/assets/errorpage1.png" alt="Error Page" className="object-cover w-full h-full"/>
         <div className="absolute z-20 flex flex-col items-center justify-center text-2xl font-semibold text-white top-[70%]">
@@ -11,6 +15,9 @@ const ErrorPage = () => {
             </div>
         <img src="/src/assets/errorpage2.png" alt="Error Page" className="absolute z-20 object-cover w-full h-full"/>
     </section>
+    <Footer/>
+    </>
+    
   )
 }
 

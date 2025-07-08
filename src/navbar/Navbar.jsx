@@ -15,7 +15,7 @@ const Navbar = ({ onCartClick }) => {
   };
 
   return (
-    <nav className="w-full h-20 flex flex-col justify-center items-center sticky top-0 z-50 bg-gradient-to-r from-[#ff626d] to-[#fcad72] lg:shadow-lg shadow-2xl">
+    <nav style={{ fontFamily: 'MyFont' }} className="w-full h-20 flex flex-col justify-center items-center sticky top-0 z-50 bg-gradient-to-r from-[#ff626d] to-[#fcad72] lg:shadow-lg shadow-2xl tracking-wide tracking-widestest">
       <div className="w-full">
         <div className="flex items-center justify-between w-11/12 h-full mx-auto lg:w-4/5">
           {/* Left side logo/title */}

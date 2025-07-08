@@ -51,7 +51,7 @@ const Showcase = () => {
           <div className="relative w-32 h-32 border border-gray-200 border-solid rounded-full">
             {!loaded[index] ? (
               <div className="flex items-center justify-center w-full h-full">
-                <span className="text-white">Loading...</span>
+                <span className="text-white ">Loading...</span>
               </div>
             ) : (
               <img

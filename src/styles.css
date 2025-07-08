@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/MyFont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyFont', sans-serif;
+}
+
+
 @import "tailwindcss";
 
 * {
-  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+
+
+
 
 .swiper-pagination-bullet {
   width: 10px;
