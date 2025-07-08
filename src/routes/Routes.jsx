@@ -1,39 +1,51 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import App from "../App";
-import Nike from "../products/brands/Nike";
-import Adidas from "../products/brands/Adidas";
-import Puma from "../products/brands/Puma";
-import Converse from "../products/brands/Converse";
-import Rebook from "../products/brands/Rebook";
+
+// Layout
+import Main from "../display/Main";
+
+// Sections & Pages
+import Home from "../display/Home";
+import Cart from "../cart/Cart";
+import SupportSection from "../sections/SupportSection";
+
+import HelpCenter from "../pages/HelpCenter";
+import ContactUs from "../pages/ContactUs";
+import ReturnsPolicy from "../pages/ReturnPolicy";
+import Testimonials from "../pages/Testimonials";
+import BrandSection from "../pages/BrandSection";
+import Catalog from "../sections/Catalog";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Main />,
+    errorElement: <ErrorPage />,
     children: [
+      { index: true, element: <Navigate to="/home" replace /> },
+
+      // Main sections
+      { path: "home", element: <Home /> },
+      { path: "catalog", element: <Catalog /> },
+      { path: "brandshoe", element: <BrandSection /> },
+      { path: "reviews", element: <Testimonials /> },
+      { path: "cart", element: <Cart /> },
+      { path: "contact", element: <ContactUs /> },
+      { path: "error", element: <ErrorPage /> },
+
       {
-        index: true, 
-        element: <Navigate to="/nike" replace />,
+        path: "support",
+        element: <SupportSection />,
+        children: [
+          { index: true, element: <HelpCenter /> },
+          { path: "help", element: <HelpCenter /> },
+          { path: "returns", element: <ReturnsPolicy /> },
+        ],
       },
+
       {
-        path: "nike",
-        element: <Nike />,
-      },
-      {
-        path: "adidas",
-        element: <Adidas />,
-      },
-      {
-        path: "puma",
-        element: <Puma />,
-      },
-      {
-        path: "reebok", 
-        element: <Rebook />,
-      },
-      {
-        path: "converse",
-        element: <Converse />,
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

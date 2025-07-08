@@ -1,26 +1,48 @@
-import { SlSocialTwitter, SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
+import {
+  SlSocialTwitter,
+  SlSocialInstagram,
+  SlSocialLinkedin,
+} from "react-icons/sl";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#232227] py-10">
-        <div className="container flex flex-col items-center justify-between px-8 mx-auto lg:px-2 lg:flex-row lg:w-4/5">
-        <h2 className="text-2xl font-bold text-black uppercase cursor-pointer"> Sneaker <span className="text-2xl font-bold text-white uppercase">Spot</span> </h2>
-            <ul className="flex flex-col items-center justify-between p-4 lg:flex-row xl:gap-12 gap-x-4 gap-y-2">
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Home</a>
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Catalog</a>
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Brands</a>
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Reviews</a>
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Contact</a>
-                <a href="#" className="leading-normal no-underline text-white text-lg hover:text-[#ff626d]">Support</a>
-            </ul>
-            <div className="flex gap-4 p-4 text-white">
-                <SlSocialInstagram className="cursor-pointer hover:text-[#ff626d]" />
-                <SlSocialLinkedin className="cursor-pointer hover:text-[#ff626d]" />
-                <SlSocialTwitter className="cursor-pointer hover:text-[#ff626d]" />
-            </div>
-        </div>
-    </footer>
-  )
-}
+    <footer className="bg-[#1c1b1e] py-7 text-white">
+      <div className="container flex flex-col items-center justify-between px-6 mx-auto lg:px-0 lg:flex-row lg:w-4/5">
+        {/* Logo */}
+        <h2 className="mb-4 text-2xl font-bold uppercase cursor-pointer lg:mb-0 animate-fadeInUp">
+          <span className="text-white">Sneaker</span>{" "}
+          <span className="text-[#ff626d]">Spot</span>
+        </h2>
 
-export default Footer
+        {/* Nav Links */}
+        <ul className="flex flex-col items-center justify-center gap-3 p-4 text-lg lg:flex-row lg:gap-8 animate-fadeInUpSlow">
+          <NavLink to="/showcase" className="hover:text-[#ff626d] transition">
+            Home
+          </NavLink>
+          <NavLink to="/catalogs" className="hover:text-[#ff626d] transition">
+            Catalogs
+          </NavLink>
+          <NavLink to="/brands" className="hover:text-[#ff626d] transition">
+            Brands
+          </NavLink>
+          <NavLink to="/reviews" className="hover:text-[#ff626d] transition">
+            Reviews
+          </NavLink>
+          <NavLink to="/contact" className="hover:text-[#ff626d] transition">
+            Contacts
+          </NavLink>
+        </ul>
+
+        {/* Social Media Icons */}
+        <div className="flex gap-4 mt-4 text-xl lg:mt-0 animate-fadeInUpSlower">
+          <SlSocialInstagram className="cursor-pointer hover:text-[#ff626d] transition" />
+          <SlSocialLinkedin className="cursor-pointer hover:text-[#ff626d] transition" />
+          <SlSocialTwitter className="cursor-pointer hover:text-[#ff626d] transition" />
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { MdContentCopy } from "react-icons/md";
-import { IoClose } from "react-icons/io5"; // Import close icon
+import { IoClose } from "react-icons/io5";
 import nikeImg from "../../assets/nikeimg1.png";
+
 const Profile = ({ closeProfile }) => {
   const profileRef = useRef(null);
 
@@ -11,17 +12,20 @@ const Profile = ({ closeProfile }) => {
         closeProfile();
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [closeProfile]);
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText("BRANDSHOE2021");
+  };
+
   return (
     <div
       ref={profileRef}
-      className="fixed top-0 right-0 bg-[#333235] h-[100vh] w-[300px] z-1000  flex flex-col justify-between  shadow-lg"
+      className="fixed top-0 right-0 bg-[#333235] h-[100vh] w-[300px] z-[1000] flex flex-col justify-between shadow-lg"
     >
       <div className="relative w-full px-10 py-8">
         {/* Close Button */}
@@ -43,25 +47,32 @@ const Profile = ({ closeProfile }) => {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-r from-[#fcad72] to-[#ff626d] h-95 flex flex-col items-center  relative " >
+      <div className="w-full bg-gradient-to-r from-[#fcad72] to-[#ff626d] h-95 flex flex-col items-center relative">
         <div className="z-40 flex flex-col items-center py-10" data-aos="fade">
-          <h2 className="text-5xl font-semibold text-white" >discount</h2>
+          <h2 className="text-5xl font-semibold text-white">discount</h2>
           <h3 className="text-3xl font-semibold text-white">
             promo <span className="text-3xl text-black">code</span>
           </h3>
           <div className="flex items-center justify-between h-10 p-4 mt-5 bg-white w-45 rounded-3xl">
             <p className="font-semibold text-black">BRANDSHOE2021</p>
-            <button className="p-3 text-white bg-black rounded-full hover:bg-[#ff626d] hover:text-white">
+            <button
+              className="p-3 text-white bg-black rounded-full hover:bg-[#ff626d] hover:text-white"
+              onClick={handleCopy}
+            >
               <MdContentCopy />
             </button>
           </div>
         </div>
 
-        <div className="bg-[#232227] rounded-full h-34 w-34 flex items-center justify-center absolute bottom-5 z-10" data-aos="fade-down"></div>
+        <div
+          className="bg-[#232227] rounded-full h-34 w-34 flex items-center justify-center absolute bottom-5 z-10"
+          data-aos="fade-down"
+        ></div>
         <img
           src={nikeImg}
           className="absolute bottom-0 z-20 w-68 top-20"
-          data-aos="fade-down" data-aos-delay="50"
+          data-aos="fade-down"
+          data-aos-delay="50"
           alt="Nike"
         />
       </div>

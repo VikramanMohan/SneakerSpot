@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
@@ -14,16 +14,37 @@
   outline: none;
   outline-offset: 2px;
   border-radius: 50%;
-  margin: 0 5px; 
+  margin: 0 5px;
   cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fff; 
+  background-color: #fff;
   outline: #fff 2px solid;
   outline-offset: 3px;
 }
+input[type="checkbox"]::-webkit-slider-thumb {
+  background-color: #fff;
+  color: black;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border: solid 4px #ff626d;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 10px #ff626d;
+  cursor: pointer;
+  position: relative;
+  bottom: 7px;
+  z-index: 10;
+}
 
 
-
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(to right, #fcad72, #ff626d);
+  border-radius: 5px;
+}
 

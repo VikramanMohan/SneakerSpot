@@ -14,7 +14,7 @@ const Shopping = () => {
             <img
               src={adidasImg2}
               alt="Adidas"
-              className="w-[270px] transition-transform hover:scale-110"
+              className="w-[270px]  hover:scale-110 transition-all"
               data-aos="fade-down"
               data-aos-delay="50"
             />
@@ -39,7 +39,6 @@ const Shopping = () => {
           <div className="flex flex-col items-center justify-center w-[35%] lg:w-[20%] gap-4 px-6 lg:items-start">
             <img
               src={adidasImg1}
-              alt=""
               className="w-16 px-3 py-4 rounded-full outline-2 outline-white"
               data-aos="fade-up"
               data-aos-delay="200"

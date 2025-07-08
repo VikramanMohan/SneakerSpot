@@ -3,6 +3,7 @@ import { CgClose } from 'react-icons/cg';
 import { HiMinus, HiPlus } from 'react-icons/hi2';
 import { IoIosArrowBack } from 'react-icons/io';
 import AdidasImg2 from '../assets/adidasimg2.png';
+import { NavLink } from 'react-router-dom';
 const Cart = () => {
   return (
     <div className='bg-[#4e4e50] min-h-screen px-4 py-8'>
@@ -57,7 +58,7 @@ const Cart = () => {
         <div className='flex items-center justify-between w-full text-center md:flex-row md:text-left' data-aos="fade-up" data-aos-delay="500">
           <div className='flex items-center justify-center p-4 font-semibold text-white cursor-pointer hover:underline underline-offset-4'>
             <IoIosArrowBack />
-            <h1 className='ml-2'>Back to shop</h1>
+            <NavLink className='ml-2' to='/showcase'>Back to shop</NavLink>
           </div>
           <div className='text-base font-semibold text-white lg:relative md:text-xl lg:right-20'>
             <h1>Subtotal: <span className='py-2'>$210</span></h1>

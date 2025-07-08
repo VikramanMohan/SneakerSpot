@@ -1,35 +1,11 @@
-import { useEffect } from "react";
-import Navbar from "./navbar/Navbar"
-import AOS from "aos";
-import "aos/dist/aos.css"
-import Product from "./products/Products";
-import Showcase from "./sections/Showcase";
-import BrandShoe from "./products/BrandShoe";
-// import Cart from "./cart/Cart";
-import Popular from "./sections/Popular";
-import Reviews from "./sections/Reviews";
-import Footer from "./sections/Footer";
-// import Shopping from "./sections/Shopping";
-  const App = () => {
+import Main from "./display/Main";
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1500, 
-    });
-  }, []);
+const App = () => {
   return (
     <>
-        <Navbar/>
-        <Showcase/>
-        <Product/>
-        <BrandShoe/>
-        {/* <Cart/> */}
-        {/* <Shopping/> */}
-        <Popular/>
-        <Reviews/>
-        <Footer/>
+      <Main />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
