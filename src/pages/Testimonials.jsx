@@ -29,7 +29,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="bg-[#333235] py-20">
+    <div className="bg-[#333235] py-20 tracking-wider">
       <div className="max-w-6xl px-6 mx-auto">
         <h2
           className="mb-12 text-3xl font-bold text-white lg:text-4xl"

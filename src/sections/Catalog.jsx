@@ -10,6 +10,7 @@ import AdidasImg from "../assets/adidasimg2.png";
 import CatalogCover from "../assets/catalogcover.jpg";
 import Size from "../products/Size";
 import { HiHeart } from "react-icons/hi2";
+import { NavLink } from "react-router-dom";
 
 const products = [
   {
@@ -126,7 +127,7 @@ useEffect(() => {
   });
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 tracking-wider sm:grid-cols-2 lg:grid-cols-4">
       {filtered.map((item, index) => (
         <div
           key={item.id}
@@ -199,7 +200,7 @@ useEffect(() => {
 
           <div className="w-full lg:w-[450px] bg-gradient-to-r from-[#ff626d] to-[#fcad72] relative p-5 shadow-xl hidden lg:block">
             <div className="absolute z-0 hidden lg:block -top-0 right-20">
-              <p className="text-sm lg:text-[10rem] font-semibold opacity-10 italic -tracking-widest">
+              <p className="text-sm lg:text-[10rem] font-semibold opacity-10 italic">
                 NIKE
               </p>
             </div>
@@ -212,9 +213,9 @@ useEffect(() => {
                   Under Armour Curry 8.
                 </h2>
                 <p className="text-2xl font-semibold text-black">$199.00</p>
-                <button className="px-3 py-2 text-sm font-semibold text-white bg-black rounded-full">
+                <NavLink to='shopping' className="px-3 py-2 text-sm font-semibold text-white bg-black rounded-full cursor-pointer">
                   GO TO CATALOG
-                </button>
+                </NavLink>
               </div>
               <div className="absolute flex items-center justify-center left-15 top-40">
                 <img
@@ -251,7 +252,8 @@ useEffect(() => {
 
           <div className="flex flex-col lg:flex-row">
             {showFilters && (
-              <aside className="w-full lg:w-[300px] space-y-8 lg:block">
+              <aside className="w-full lg:w-[300px] space-y-8 lg:block" data-aos='fade-right'
+                        data-aos-delay='200'>
                 <h2 className="px-10 pt-10 text-3xl font-bold ">Filtr.</h2>
                 <div className="px-10 space-y-2">
                   {/* <p className="font-semibold">Category</p> */}
@@ -314,7 +316,7 @@ useEffect(() => {
                       
                     ))}
                   </div>
-                                      <div className="w-full mt-8 border border-gray-400"></div>
+                <div className="w-full mt-8 border border-gray-400"></div>
                 </div>
                 <div className="px-10 mb-10 space-y-2">
                   {/* <p className="font-semibold">Type</p> */}
@@ -330,7 +332,7 @@ useEffect(() => {
 
             <div className="flex-1">
               <div className="pb-6">
-                <div className="flex flex-col items-center justify-between gap-6 px-4 py-12 bg-black lg:flex-row">
+                <div className="flex flex-col items-center justify-between gap-6 px-4 py-12 bg-black lg:flex-row" data-aos='fade-up' data-aos-delay='200'>
                   <div className="flex flex-wrap gap-6">
                     {["Nike", "Adidas", "Puma", "Reebok", "Converse"].map((brand) => (
                       <div
@@ -338,6 +340,8 @@ useEffect(() => {
                         className={`hover:text-red-400 cursor-pointer ${
                           active === brand ? "text-red-400" : "text-white"
                         }`}
+                        data-aos='fade-up'
+                        data-aos-delay='200'
                         onClick={() => setActive(brand)}
                       >
                         {brand} <span>({Math.floor(Math.random() * 200)})</span>
@@ -345,16 +349,17 @@ useEffect(() => {
                     ))}
                   </div>
                   
-                  <div className="flex flex-wrap items-center gap-6">
+                  <div className="flex flex-wrap items-center gap-6" data-aos='fade-up'
+                        data-aos-delay='200'>
                     <p
                       className="flex items-center gap-2 text-white underline cursor-pointer underline-offset-4 hover:text-red-400"
-                      onClick={() => setShowSizeSelector(!showSizeSelector)}
+                      onClick={() => setShowSizeSelector(!showSizeSelector)} 
                     >
                       Newest 
                     </p>
                     <p
                       className="flex items-center gap-2 text-white underline cursor-pointer underline-offset-4 hover:text-red-400"
-                      onClick={() => setShowSizeSelector(!showSizeSelector)}
+                      onClick={() => setShowSizeSelector(!showSizeSelector)} 
                     >
                       UK Size <TbArrowBackUp />
                     </p>

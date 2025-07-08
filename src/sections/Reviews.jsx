@@ -34,7 +34,7 @@ export default function Reviews() {
   const handlePreview = () => carouselRef.current?.previous(0);
 
   return (
-    <div className="bg-[#333235] pt-16 pb-8">
+    <div className="bg-[#333235] pt-16 pb-8 tracking-wider">
       <div className="xl:w-4/5 max-w-[1400px] mx-auto px-6" data-aos="fade-up">
         <div className="flex items-center justify-between pt-8">
           <h2 className="lg:text-4xl text-2xl lg:leading-[70px] text-white font-bold">

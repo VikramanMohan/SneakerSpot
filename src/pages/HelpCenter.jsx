@@ -1,6 +1,6 @@
 const HelpCenter = () => {
   return (
-    <section className="text-white lg:py-10 lg:px-6 md:px-10" data-aos="fade-up">
+    <section className="tracking-wider text-white lg:py-10 lg:px-6 md:px-10" data-aos="fade-up">
       <h2 className="mb-6 text-3xl font-bold text-center lg:text-4xl">Help Center</h2>
 
       <div className="grid gap-8 md:grid-cols-2">

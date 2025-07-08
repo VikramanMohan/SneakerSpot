@@ -4,7 +4,7 @@ import AdidasImg from "../assets/adidasimg2.png"
 import PumaImg from "../assets/pumaimg1.png"
 const BrandShoe = () => {
   return (
-    <div className="bg-[#333235]">
+    <div className="bg-[#333235] tracking-wider">
         <div className="xl:w-4/5 max-w-[1400px] px-6 mx-auto">
             <div className="lg:flex lg:pb-40">
                 <div className="flex flex-col justify-between lg:w-3/5 lg:pt-16">

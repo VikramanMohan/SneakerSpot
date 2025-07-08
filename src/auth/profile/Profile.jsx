@@ -25,7 +25,7 @@ const Profile = ({ closeProfile }) => {
   return (
     <div
       ref={profileRef}
-      className="fixed top-0 right-0 bg-[#333235] h-[100vh] w-[300px] z-[1000] flex flex-col justify-between shadow-lg"
+      className="fixed top-0 right-0 bg-[#333235] h-[100vh] w-[300px] z-[1000] flex flex-col justify-between shadow-lg tracking-wider"
     >
       <div className="relative w-full px-10 py-8">
         {/* Close Button */}

@@ -36,7 +36,7 @@ const Product = () => {
   };
 
   return (
-    <div className="bg-[#333235]">
+    <div className="bg-[#333235] tracking-wider">
       <div className="xl:w-4/5 max-w-[1400px] px-6 m-auto py-8">
         <div data-aos="fade-down" data-aos-duration="300">
           <h2 className="py-6 text-4xl font-semibold text-white">Products.</h2>

@@ -40,7 +40,7 @@ const Showcase = () => {
       <div className="xl:w-4/5 px-6 max-w-[1400px] mx-auto flex flex-col justify-center">
         {/* Background  Text */}
         <div className="absolute hidden top-24 right-40 lg:block">
-          <p className="lg:text-[12rem] font-semibold opacity-10 italic -tracking-widest">NIKE</p>
+          <p className="lg:text-[12rem] font-semibold opacity-10 italic">NIKE</p>
         </div>
 
         {/* Floating Changing Image */}
@@ -119,7 +119,7 @@ const Showcase = () => {
                   onLoad={() => handleImageLoad(i)}
                 />
                 {/* Promo Badge */}
-                <div className="absolute flex flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-5 lg:h-30 lg:w-30 h-25 w-25 top-20 left-10 md:left-[240px] lg:top-25 lg:left-80  lg:z-50 z-40" data-aos="fade-right">
+                <div className="absolute flex flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-5 lg:h-30 lg:w-30 h-25 w-25 top-20 left-10 md:left-[240px] lg:top-25 lg:left-80  lg:z-50 z-40 tracking-wider" data-aos="fade-right">
                   <p className="text-[12px] text-white text- lg:text-sm">promo:nike</p>
                   <p className="text-2xl font-bold text-gray-900">40%</p>
                   <p className="text-2xl font-bold text-white">sale</p>  
@@ -132,7 +132,7 @@ const Showcase = () => {
               {/* Text Section*/}
               <div className="absolute z-50 lg:w-1/3 top-70 left-10 lg:top-70 lg:left-35">
                 <p className="mb-2 text-2xl font-bold text-gray-500 lg:mb-2:text-2xl">{item.id}</p>
-                <h2 className="mb-2 text-3xl font-bold text-white lg:text-5xl">Brand Shoes.</h2>
+                <h2 className="mb-2 text-3xl font-bold tracking-wider text-white lg:text-5xl">Brand Shoes.</h2>
                 <p className="mb-2 text-sm text-white">
                   We deliver immersive virtual reality experiences that encourage learning, creativity, and play at transport hubs, select retail, and culturally significant venues.
                 </p>

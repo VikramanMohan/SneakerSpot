@@ -4,7 +4,7 @@ const SupportSection = () => {
   const location = useLocation();
 
   return (
-    <section className="min-h-screen px-6 py-10 bg-[#333235] text-white md:px-20 ">
+    <section className="min-h-screen px-6 py-10 bg-[#333235] text-white md:px-20 tracking-wider">
       <h2 className="mb-6 text-3xl font-bold lg:text-4xl ">Customer Support.</h2>
 
       <div className="grid gap-8 md:grid-cols-2">

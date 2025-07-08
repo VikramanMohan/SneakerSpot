@@ -2,7 +2,7 @@ const Size = ({ onSelect }) => {
   const sizes = ["6", "7", "8", "9", "10"];
 
   return (
-    <div className="p-4 mt-4 bg-[#232227] rounded shadow ">
+    <div className="p-4 bg-[#232227] rounded shadow tracking-wider">
       <h4 className="mb-2 font-semibold text-white">Select UK Size:</h4>
       <div className="flex gap-4">
         {sizes.map((size) => (

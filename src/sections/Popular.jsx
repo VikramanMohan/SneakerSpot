@@ -35,7 +35,7 @@ const Popular = () => {
 
   return (
     <>
-    <div className="bg-[#232227] pb-16 lg:h-[25rem] h-full" >
+    <div className="bg-[#232227] pb-16 lg:h-[25rem] h-full tracking-wider" >
         <div className="xl:w-4/5 max-w-[1400px] mx-auto relative" data-aos="fade-up" > 
             <div className="w-full lg:absolute lg:-top-40"> 
                 <h2 className="py-8 text-3xl font-semibold text-center text-white">Most Popular Products.</h2>

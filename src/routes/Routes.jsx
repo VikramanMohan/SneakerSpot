@@ -14,6 +14,7 @@ import ReturnsPolicy from "../pages/ReturnPolicy";
 import Testimonials from "../pages/Testimonials";
 import BrandSection from "../pages/BrandSection";
 import Catalog from "../sections/Catalog";
+import Shopping from "../sections/Shopping";
 import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "reviews", element: <Testimonials /> },
       { path: "cart", element: <Cart /> },
       { path: "contact", element: <ContactUs /> },
+      {path: "shopping", element: <Shopping/>},
       { path: "error", element: <ErrorPage /> },
 
       {

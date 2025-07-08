@@ -1,10 +1,36 @@
+import { useState } from "react";
 import { BiPhone } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdOutlineOnlinePrediction } from "react-icons/md";
 
 const ContactUs = () => {
+  const [message, setMessage] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  // Fix: use correct property name for textarea binding
+  const { name, email, message: msg } = message;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setMessage((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", message);
+    alert("Message sent successfully!");
+    setMessage({
+      name: "",
+      email: "",
+      message: ""
+    });
+  };
+
   return (
-    <div className="px-6 py-10 bg-[#333235] md:px-20 lg:py-18 text-white">
+    <div className="px-6 py-10 bg-[#333235] md:px-20 lg:py-18 text-white tracking-wider">
       <h2 className="mb-6 text-3xl font-bold text-white lg:text-4xl">Contact Us</h2>
 
       <div className="grid gap-8 md:grid-cols-2">
@@ -67,13 +93,16 @@ const ContactUs = () => {
           data-aos-delay="600"
         >
           <h3 className="mb-4 text-xl font-semibold text-white">Send a Message</h3>
-          <form className="space-y-5">
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
               <label className="block mb-1 text-sm text-gray-400">Your Name</label>
               <input
                 type="text"
                 className="w-full p-2 bg-[#1f1f22] border border-[#3a3a3a] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff626d]"
                 placeholder="John Doe"
+                name="name"
+                value={name}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -82,6 +111,9 @@ const ContactUs = () => {
                 type="email"
                 className="w-full p-2 bg-[#1f1f22] border border-[#3a3a3a] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff626d]"
                 placeholder="you@example.com"
+                name="email"
+                value={email}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -90,6 +122,9 @@ const ContactUs = () => {
                 rows="4"
                 className="w-full p-2 bg-[#1f1f22] border border-[#3a3a3a] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff626d]"
                 placeholder="How can we help you?"
+                name="message"
+                value={msg}
+                onChange={handleChange}
               ></textarea>
             </div>
             <button

@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1c1b1e] py-7 text-white">
+    <footer className="bg-[#1c1b1e] py-7 text-white tracking-wider">
       <div className="container flex flex-col items-center justify-between px-6 mx-auto lg:px-0 lg:flex-row lg:w-4/5">
         {/* Logo */}
         <h2 className="mb-4 text-2xl font-bold uppercase cursor-pointer lg:mb-0 animate-fadeInUp">
@@ -16,7 +16,7 @@ const Footer = () => {
         </h2>
 
         {/* Nav Links */}
-        <ul className="flex flex-col items-center justify-center gap-3 p-4 text-lg lg:flex-row lg:gap-8 animate-fadeInUpSlow">
+        <ul className="flex flex-col items-center justify-center gap-3 text-lg lg:flex-row lg:gap-8 animate-fadeInUpSlow">
           <NavLink to="/showcase" className="hover:text-[#ff626d] transition">
             Home
           </NavLink>
