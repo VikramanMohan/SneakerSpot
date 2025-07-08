@@ -53,7 +53,7 @@ const BrandSection = () => {
                   <img
                   src={BrandShoe2}
                   alt="Adidas Shoe"
-                  className="w-full transition-transform duration-300 md:h-35 lg:h-80 hover:scale-110 "
+                  className="w-full md:h-35 lg:h-80 "
                 />
                 </div>
               </div>

@@ -37,10 +37,10 @@ const Profile = ({ closeProfile }) => {
         </button>
 
         <div className="flex flex-col justify-between">
-          <button className="px-4 py-2 mt-1 text-black bg-white hover:bg-black hover:text-white">
+          <button className="px-4 py-2 mt-1 text-black bg-white rounded-full hover:bg-black hover:text-white">
             Register
           </button>
-          <button className="px-4 py-2 mt-2 text-black bg-white hover:bg-black hover:text-white">
+          <button className="px-4 py-2 mt-2 text-black bg-white rounded-full hover:bg-black hover:text-white">
             Login
           </button>
           <p className="py-2 font-semibold text-white">Login or New User?</p>

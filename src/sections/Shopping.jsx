@@ -6,7 +6,7 @@ import { BiCheck } from "react-icons/bi";
 
 const Shopping = () => {
   return (
-    <div className="bg-gradient-to-r from-[#ff626d] to-[#fcad72] lg:py-6 py-16 overflow-hidden min-h-screen tracking-wider">
+    <div className="bg-gradient-to-r from-[#ff626d] to-[#fcad72] pt-6 overflow-hidden min-h-screen tracking-wider">
       <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-center lg:px-10 relative">
         {/* Left Section (Product Image) */}
         <div className="flex items-center justify-center w-full py-6 lg:w-1/2">

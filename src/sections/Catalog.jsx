@@ -7,7 +7,7 @@ import { MdCancel } from "react-icons/md";
   import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AdidasImg from "../assets/adidasimg2.png";
-import CatalogCover from "../assets/catalogcover.jpg";
+import CatalogCover from "../assets/pxfuel.jpg";
 import Size from "../products/Size";
 import { HiHeart } from "react-icons/hi2";
 import { NavLink } from "react-router-dom";
@@ -190,7 +190,7 @@ useEffect(() => {
         </h2>
 
         <div className="flex flex-col justify-between lg:flex-row">
-          <div className="w-full lg:w-[1100px]">
+          <div className="w-full ">
             <img
               src={CatalogCover}
               alt="Sneaker Catalog"
@@ -198,7 +198,7 @@ useEffect(() => {
             />
           </div>
 
-          <div className="w-full lg:w-[450px] bg-gradient-to-r from-[#ff626d] to-[#fcad72] relative p-5 shadow-xl hidden lg:block">
+          <div className="w-full lg:w-[450px] bg-gradient-to-r from-[#ff626d] to-[#fcad72] relative p-5 shadow-xl hidden ">
             <div className="absolute z-0 hidden lg:block -top-0 right-20">
               <p className="text-sm lg:text-[10rem] font-semibold opacity-10 italic">
                 NIKE
@@ -213,7 +213,7 @@ useEffect(() => {
                   Under Armour Curry 8.
                 </h2>
                 <p className="text-2xl font-semibold text-black">$199.00</p>
-                <NavLink to='shopping' className="px-3 py-2 text-sm font-semibold text-white bg-black rounded-full cursor-pointer">
+                <NavLink to='/shopping' className="px-4 py-3 text-sm font-semibold text-white bg-black rounded-full cursor-pointer">
                   GO TO CATALOG
                 </NavLink>
               </div>
@@ -225,8 +225,8 @@ useEffect(() => {
                 />
                 <div className="hidden lg:flex flex-col items-center justify-center bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full p-4 absolute top-10 right-0">
                   <p className="text-sm text-white">promo: nike</p>
-                  <p className="text-2xl font-bold text-gray-800">40%</p>
-                  <p className="font-bold text-white text-md">sale</p>
+                  <p className="font-bold text-gray-800 text-md">40%</p>
+                  <p className="text-sm font-semibold tracking-wide text-white">sale</p>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ useEffect(() => {
                       className="flex items-center gap-2 text-white underline cursor-pointer underline-offset-4 hover:text-red-400"
                       onClick={() => setShowSizeSelector(!showSizeSelector)} 
                     >
-                      Newest 
+                      Newest <TbArrowBackUp />
                     </p>
                     <p
                       className="flex items-center gap-2 text-white underline cursor-pointer underline-offset-4 hover:text-red-400"
