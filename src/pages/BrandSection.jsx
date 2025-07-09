@@ -12,7 +12,7 @@ import { HiHeart } from 'react-icons/hi2';
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Img from '/src/assets/adidasimg4.png'
 
 const brands = [
   { name: "Nike", logo: NikeLogo },
@@ -160,7 +160,7 @@ const BrandSection = () => {
           </div>
           <div className='w-[60%] relative top-3'>
             <img
-              src='/src/assets/adidasimg4.png'
+              src={Img}
               className='w-full transition-all duration-300 ease-in-out hover:scale-110'
               alt={value.name}
             />
