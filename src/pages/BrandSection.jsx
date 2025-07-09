@@ -93,13 +93,13 @@ const BrandSection = () => {
           </div>
         </div>
       </div>
-      <div className="px-2 py-6 mx-auto max-w-7xl text-start">
+      <div className="px-4 py-6 mx-auto max-w-7xl text-start">
         <h2 className="text-4xl font-bold text-white ">Top Brands.</h2>
         <p className="mt-2 text-gray-500 text-md">Shop your favorite brands</p>
       </div>
 
       {/* Brand Logos */}
-      <div className="flex flex-wrap justify-center w-full gap-10 pb-10 overflow-x-auto tracking-wider x-auto sm:overflow-visible">
+      <div className="flex flex-wrap justify-center w-full gap-10 pb-10 tracking-wider oveflow-x-auto x-auto sm:overflow-visible">
         {brands.map((brand, index) => (
           <motion.div
             key={index}
@@ -107,7 +107,7 @@ const BrandSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative flex items-center justify-center transition bg-[#232227] rounded-2xl shadow cursor-pointer group w-55 h-50 hover:scale-105"
+            className="relative flex items-center justify-center transition bg-[#232227] rounded-2xl shadow cursor-pointer group w-55 h-50 hover:scale-105 "
             onClick={() => alert(`You selected ${brand.name}`)}
             title={brand.name}
           >
@@ -121,7 +121,7 @@ const BrandSection = () => {
       </div>
 
       
-<div className='px-2 py-6 mx-auto text-white max-w-7xl text-start'>
+<div className='px-4 py-6 mx-auto text-white max-w-7xl text-start'>
   <h1 className='text-4xl font-bold '>Recommended.</h1>
 
   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
