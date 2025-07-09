@@ -21,7 +21,7 @@ const Footer = () => {
             Home
           </NavLink>
           <NavLink to="/catalog" className="hover:text-[#ff626d] transition">
-            Catalogs
+            Catalog
           </NavLink>
           <NavLink to="/brandshoe" className="hover:text-[#ff626d] transition">
             Brands

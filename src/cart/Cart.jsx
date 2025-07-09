@@ -6,7 +6,7 @@ import AdidasImg2 from '../assets/adidasimg2.png';
 import { NavLink } from 'react-router-dom';
 const Cart = () => {
   return (
-    <div className='bg-[#4e4e50] min-h-screen px-4 py-8 tracking-wider'>
+    <div className='bg-[#232227] min-h-screen px-4 py-8 tracking-wider'>
       <div className='mx-auto max-w-7xl' data-aos="fade-down">
         <h2 className='mb-6 text-2xl font-semibold text-white md:text-4xl'>your shopping cart.</h2>
         <div className='flex flex-col items-center lg:flex-col'>

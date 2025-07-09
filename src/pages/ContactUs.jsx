@@ -31,7 +31,7 @@ const ContactUs = () => {
 
   return (
     <div className="px-6 py-10 bg-[#333235] md:px-20 lg:py-18 text-white tracking-wider">
-      <h2 className="mb-6 text-3xl font-bold text-white lg:text-4xl">Contact Us</h2>
+      <h2 className="mb-6 text-3xl font-bold text-white lg:text-4xl">Contact Us.</h2>
 
       <div className="grid gap-8 md:grid-cols-2">
         {/* Contact Details */}

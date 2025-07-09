@@ -8,6 +8,10 @@ import { motion } from 'framer-motion';
 import BrandShoe1 from "../assets/brandshoecover1.png"
 import BrandShoe2 from "../assets/brandshoecover2.png"
 import { NavLink } from 'react-router-dom';
+import { HiHeart } from 'react-icons/hi2';
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const brands = [
@@ -17,8 +21,33 @@ const brands = [
   { name: "Reebok", logo: ReebokLogo },
   { name: "Converse", logo: ConverseLogo },
 ];
-
+const products =[
+  {id:1,name:"NIKE AIR TEMPO",price:190.00,style:"day-to-day"},
+{id:2,name:"NIKE AIR MAX 2021",price:290.00,style:"streat"},
+{id:3,name:"NIKE AIR MAX VIVA",price:150.00,style:"day-to-day"},
+{id:4,name:"NIKE AIR ZOOM TEMPO",price:160.00,style:"streat"},
+{id:5,name:"NIKE AIR MAX 2024",price:210.00,style:"day-to-day"},
+{id:6,name:"NIKE AIR TEMPO 2022",price:300.00,style:"streat"},]
 const BrandSection = () => {
+    const [liked, setLiked] = useState({});
+  
+  
+    const handleLike = (id) => {
+      setLiked((prev) => ({
+        ...prev,
+        [id]: !prev[id],
+      }));
+    };
+
+    useEffect(() => {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        delay: 200, 
+      });
+    }, []);
+  
   return (
     <section className=" bg-[#333235] min-h-screen tracking-wider">
       <div className="relative max-w-full mx-auto">
@@ -62,13 +91,13 @@ const BrandSection = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-6xl py-8 mx-auto text-start">
-        <h2 className="text-3xl font-bold text-white">Top Brands</h2>
-        <p className="mt-2 text-gray-500">Shop your favorite brands</p>
+      <div className="px-2 py-6 mx-auto max-w-7xl text-start">
+        <h2 className="text-4xl font-bold text-white ">Top Brands.</h2>
+        <p className="mt-2 text-gray-500 text-md">Shop your favorite brands</p>
       </div>
 
       {/* Brand Logos */}
-      <div className="flex flex-wrap justify-center w-full gap-4 pb-10 mx-auto overflow-x-auto tracking-wider sm:overflow-visible">
+      <div className="flex flex-wrap justify-center w-full gap-10 pb-10 overflow-x-auto tracking-wider x-auto sm:overflow-visible">
         {brands.map((brand, index) => (
           <motion.div
             key={index}
@@ -76,7 +105,7 @@ const BrandSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative flex items-center justify-center transition bg-[#232227] shadow cursor-pointer group w-55 h-50 hover:scale-105"
+            className="relative flex items-center justify-center transition bg-[#232227] rounded-2xl shadow cursor-pointer group w-55 h-50 hover:scale-105"
             onClick={() => alert(`You selected ${brand.name}`)}
             title={brand.name}
           >
@@ -85,12 +114,66 @@ const BrandSection = () => {
               alt={brand.name}
               className="object-contain max-h-30"
              />
-            <span className="absolute text-xs text-gray-500 transition opacity-0 bottom-1 group-hover:opacity-100">
-              {brand.name}
-            </span>
           </motion.div>
         ))}
       </div>
+
+      
+<div className='px-2 py-6 mx-auto text-white max-w-7xl text-start'>
+  <h1 className='text-4xl font-bold '>Recommended.</h1>
+
+  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+    {products.map((value, index) => (
+      <div
+        key={index}
+        className='flex flex-col items-center justify-center w-full overflow-hidden'
+        data-aos="fade-up"
+          data-aos-delay={index * 100}
+      >
+        {/* Top Info */}
+        <div className='flex items-center justify-between bg-[#333235] w-full px-3 py-6'>
+          <div className='p-1'>
+            <h1 className='text-md'>{value.name}</h1>
+            <p className='text-sm'>Pricing: ${value.price}</p>
+          </div>
+           <span
+                className={`cursor-pointer ${
+                  liked[value.id] ? "text-red-500" : "text-gray-300"
+                }`}
+                onClick={() => handleLike(value.id)}
+              >
+                <HiHeart />
+              </span>
+        </div>
+
+        {/* Image Section - Color changes for middle boxes */}
+        <div
+          className={`h-64 w-full flex flex-col items-center relative overflow-hidden ${
+            index % 2 === 1 ? "bg-[#232227]" : "bg-[#4e4e50]"
+          }`}
+        >
+          <div className='flex items-center justify-between w-full px-5 py-6'>
+            <h1 className='uppercase text-md'>{value.style}</h1>
+            <button className='bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full px-4 py-1 text-sm'>
+              NEW
+            </button>
+          </div>
+          <div className='w-[60%] relative top-3'>
+            <img
+              src='/src/assets/adidasimg2.png'
+              className='w-full transition-all duration-300 ease-in-out hover:scale-110'
+              alt={value.name}
+            />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+      
     </section>
   );
 };

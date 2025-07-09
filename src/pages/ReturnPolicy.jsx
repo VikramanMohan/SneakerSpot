@@ -1,7 +1,7 @@
 const ReturnsPolicy = () => {
   return (
     <section className="tracking-wider text-white lg:py-10 lg:px-6 md:px-10" data-aos="fade-up">
-      <h2 className="mb-6 text-3xl font-bold text-center">Returns & Refund Policy</h2>
+      <h2 className="mb-6 text-3xl font-bold text-center">Returns & Refund Policy.</h2>
 
       <div className="max-w-5xl p-6 mx-auto bg-[#232227] shadow-md rounded-2xl transition-all hover:shadow-lg">
         <h3 className="mb-4 text-xl font-semibold text-white">Easy 7-Day Return</h3>

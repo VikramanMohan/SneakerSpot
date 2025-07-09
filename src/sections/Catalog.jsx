@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { TbArrowBackUp } from "react-icons/tb";
 import { SiSonarcloud } from "react-icons/si";
 import { MdCancel } from "react-icons/md";
-  import AOS from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AdidasImg from "../assets/adidasimg2.png";
 import CatalogCover from "../assets/pxfuel.jpg";
@@ -127,7 +127,7 @@ useEffect(() => {
   });
 
   return (
-    <div className="grid grid-cols-1 tracking-wider sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 tracking-wider md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4">
       {filtered.map((item, index) => (
         <div
           key={item.id}
@@ -244,7 +244,7 @@ useEffect(() => {
           <div className="flex justify-end mb-6 lg:hidden">
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="px-4 py-2 font-semibold bg-pink-500 rounded-full"
+              className="px-4 py-2 font-semibold bg-gradient-to-r from-[#fcad72] to-[#ff626d] rounded-full tracking-wide"
             >
               {showFilters ? "Hide Filters" : "Show Filters"}
             </button>
