@@ -160,7 +160,7 @@ const BrandSection = () => {
           </div>
           <div className='w-[60%] relative top-3'>
             <img
-              src='/src/assets/adidasimg2.png'
+              src='/src/assets/adidasimg4.png'
               className='w-full transition-all duration-300 ease-in-out hover:scale-110'
               alt={value.name}
             />
