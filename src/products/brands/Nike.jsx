@@ -5,11 +5,9 @@ import NikeImg2 from "../../assets/nikeimg6.png";
 import NikeImg3 from "../../assets/nikeimg5.png";
 import NikeImg4 from "../../assets/nikeimg10.png";
 import NikeImg5 from "../../assets/nikeimg8.png";
-import NikeImg6 from "../../assets/nikeimg8.png";
 
 import NikeBoxImg1 from "../../assets/imgbox1.jpg";
-import AdidasImg from "../../assets/adidasimg2.png";
-import PumaImg from "../../assets/pumaimg1.png";
+
 const Nike = () => {
   return (
     <>
@@ -91,11 +89,11 @@ const Nike = () => {
           </div>
           <div className="bg-[#232227] h-64 flex justify-center items-center relative ">
             <div className="flex items-center justify-center">
-              <img
-                src={NikeImg3}
-                alt=""
-                className="w-1/2 transition-all hover:scale-110 "
-              />
+                <img
+                  src={NikeImg3}
+                  alt="Nike"
+                  className="w-1/2 transition-all hover:scale-110"
+                />
             </div>
             <div className="absolute flex items-center justify-between w-full px-6 top-6">
               <p className="text-white ">STREAT</p>

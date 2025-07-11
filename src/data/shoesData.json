@@ -1,0 +1,250 @@
+[
+  {
+    "brandname": "Nike",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "NIKE AIR MAX 2090",
+        "price": 190.0,
+        "image": "/images/nikeimg1.png",
+        "type": "day-to-day",
+        "color": "White/Green",
+        "size": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "category": "unisex",
+        "latest": true,
+        "description": "A modern twist on a classic Air Max with upgraded comfort.",
+        "reviews": [
+          {
+            "user": "user1",
+            "username": "@vikram",
+            "rating": 4.5,
+            "comment": "Super comfy for daily walks!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "brandname": "Adidas",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "Adidas Ultraboost 21",
+        "price": 180.0,
+        "image": "/images/adidasimg3.png",
+        "type": "running",
+        "color": "Blue/White",
+        "size": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "category": "men",
+        "latest": true,
+        "description": "Responsive running shoes with Primeknit upper and Boost midsole.",
+        "reviews": [
+          {
+            "user": "user2",
+            "username": "@arun",
+            "rating": 4.8,
+            "comment": "Feels like flying while running!"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "shoename": "Adidas Daily 3.0",
+        "price": 90.0,
+        "image": "/images/adidasimg1.png",
+        "type": "casual",
+        "color": "Red/Black",
+        "size": [
+          7,
+          8,
+          10
+        ],
+        "category": "unisex",
+        "latest": false,
+        "description": "Everyday sneaker with a sleek look and rubber outsole.",
+        "reviews": [
+          {
+            "user": "user4",
+            "username": "@megha",
+            "rating": 4.2,
+            "comment": "Great look, affordable price."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "brandname": "Puma",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "Puma RS-X3 Super",
+        "price": 120.0,
+        "image": "/images/pumaimg1.png",
+        "type": "fashion",
+        "color": "Red/Black",
+        "size": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "category": "unisex",
+        "latest": true,
+        "description": "Bold design with RS technology for retro sneaker lovers.",
+        "reviews": [
+          {
+            "user": "user3",
+            "username": "@divya",
+            "rating": 4.7,
+            "comment": "Stylish and super trendy."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "shoename": "Puma Velocity Nitro",
+        "price": 140.0,
+        "image": "/images/pumaimg3.png",
+        "type": "running",
+        "color": "Yellow/Black",
+        "size": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "category": "men",
+        "latest": true,
+        "description": "High-performance shoes with advanced foam for speed and comfort.",
+        "reviews": [
+          {
+            "user": "user5",
+            "username": "@raj",
+            "rating": 4.6,
+            "comment": "Best shoes for long runs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "brandname": "Reebok",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "Reebok Nano X2",
+        "price": 130.0,
+        "image": "/images/reebokimg1.png",
+        "type": "training",
+        "color": "White/Blue",
+        "size": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "category": "unisex",
+        "latest": true,
+        "description": "Stable and durable shoes for cross-training workouts.",
+        "reviews": [
+          {
+            "user": "user6",
+            "username": "@karthik",
+            "rating": 4.4,
+            "comment": "Perfect grip during workouts!"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "shoename": "Reebok Floatride",
+        "price": 100.0,
+        "image": "/images/reebokimg2.png",
+        "type": "running",
+        "color": "Grey/White",
+        "size": [
+          7,
+          8,
+          9
+        ],
+        "category": "women",
+        "latest": false,
+        "description": "Lightweight running shoes with soft cushioning.",
+        "reviews": [
+          {
+            "user": "user4",
+            "username": "@megha",
+            "rating": 4.1,
+            "comment": "Light and breathable."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "brandname": "Converse",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "Converse Chuck Taylor All Star",
+        "price": 65.0,
+        "image": "/images/converseimg3.png",
+        "type": "casual",
+        "color": "Black/White",
+        "size": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "category": "unisex",
+        "latest": false,
+        "description": "The original high-top canvas sneaker. Timeless and iconic.",
+        "reviews": [
+          {
+            "user": "user2",
+            "username": "@arun",
+            "rating": 4.0,
+            "comment": "Never goes out of style."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "shoename": "Converse Chuck 70",
+        "price": 85.0,
+        "image": "/images/converseimg5.png",
+        "type": "retro",
+        "color": "Red/White",
+        "size": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "category": "unisex",
+        "latest": true,
+        "description": "Premium version with modern comfort updates.",
+        "reviews": [
+          {
+            "user": "user1",
+            "username": "@vikram",
+            "rating": 4.5,
+            "comment": "Feels more padded than the classic ones."
+          }
+        ]
+      }
+    ]
+  }
+]
