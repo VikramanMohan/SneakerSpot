@@ -1,5 +1,5 @@
 import { HiHeart } from "react-icons/hi2"
-import NikeBoxImg from "../assets/imgbox.jpg"
+import NikeBoxImg from "../assets/imgbox1.jpg"
 import AdidasImg from "../assets/adidasimg2.png"
 import PumaImg from "../assets/pumaimg1.png"
 const BrandShoe = () => {

@@ -13,7 +13,13 @@ import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Img1 from '../assets/adidasimg2.png'; 
-import Img2 from '../assets/adidasimg4.png'; 
+import Img2 from '../assets/adidasimg6.png'; 
+import Img3 from '../assets/flowimg.png'; 
+import Img4 from '../assets/converseimg6.png'; 
+import Img5 from '../assets/pumaimg5.png';
+import Img6 from '../assets/reebokimg5.png'; 
+
+
 
 const brands = [
   { name: "Nike", logo: NikeLogo },
@@ -25,10 +31,10 @@ const brands = [
 const products =[
   {id:1,name:"NIKE AIR TEMPO",price:190.00,style:"day-to-day", image: Img1},
   {id:2,name:"NIKE AIR MAX 2021",price:290.00,style:"streat", image: Img2},
-  {id:3,name:"NIKE AIR MAX VIVA",price:150.00,style:"day-to-day", image: Img1},
-  {id:4,name:"NIKE AIR ZOOM TEMPO",price:160.00,style:"streat", image: Img2},
-  {id:5,name:"NIKE AIR MAX 2024",price:210.00,style:"day-to-day", image: Img1},
-  {id:6,name:"NIKE AIR TEMPO 2022",price:300.00,style:"streat", image: Img2}
+  {id:3,name:"NIKE AIR MAX VIVA",price:150.00,style:"day-to-day", image: Img3},
+  {id:4,name:"NIKE AIR ZOOM TEMPO",price:160.00,style:"streat", image: Img4},
+  {id:5,name:"NIKE AIR MAX 2024",price:210.00,style:"day-to-day", image: Img5},
+  {id:6,name:"NIKE AIR TEMPO 2022",price:300.00,style:"streat", image: Img6}
 ]
 const BrandSection = () => {
     const [liked, setLiked] = useState({});

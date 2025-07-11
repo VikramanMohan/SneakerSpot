@@ -1,4 +1,3 @@
-import BrandShoe from "../products/BrandShoe";
 import Products from "../products/Products";
 import Showcase from "../sections/Showcase";
 import Popular from "../sections/Popular";
@@ -10,8 +9,7 @@ const Home = () => {
     <>
       <Showcase />      
       <Products />     
-      <BrandShoe />    
-      <Popular />     
+      <Popular />    
       <Reviews />    
     </>
   );

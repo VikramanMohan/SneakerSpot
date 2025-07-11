@@ -16,6 +16,16 @@ body {
   box-sizing: border-box;
 }
 
+.swiper-slide-custom {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.05);
+  z-index: 20;
+}
+
+
 
 
 

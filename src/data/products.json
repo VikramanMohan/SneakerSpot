@@ -1,0 +1,59 @@
+[
+  {
+    "brandname": "Nike",
+    "shoes": [
+      {
+        "id": 1,
+        "shoename": "NIKE WMNS ZOOM AIR FIRE `WHITEUNIVERSITY RED",
+        "price": 140.0,
+        "image": "/images/nikeboximg.jpg"
+      },
+      {
+        "id": 2,
+        "shoename": "NIKE AIR MAX 2090",
+        "price": 190.0,
+        "image": "/images/nikeimg1.png",
+        "type": "day-to-day"
+      },
+      {
+        "id": 3,
+        "shoename": "NIKE AIR VAPORMAX",
+        "price": 210.0,
+        "image": "/images/nikeimg2.png",
+        "type": "streat"
+      },
+      {
+        "id": 4,
+        "shoename": "NIKE AIR MAX 2010",
+        "price": 190.0,
+        "image": "/images/nikeimg3.png",
+        "type": "day-to-day"
+      },
+      {
+        "id": 5,
+        "shoename": "NIKE AIR ZOOM TEMPO",
+        "price": 190.0,
+        "image": "/images/nikeimg4.png",
+        "type": "day-to-day"
+      },
+      {
+        "id": 6,
+        "shoename": "NIKE AIR MAX 2021",
+        "price": 150.0,
+        "image": "/images/nikeimg5.png",
+        "type": "day-to-day"
+      },
+      {
+        "id": 7,
+        "shoename": "NIKE AIR MAX VIVA",
+        "price": 170.0,
+        "image": "/images/nikeimg6.png",
+        "type": "day-to-day"
+      }
+    ]
+  },
+  {
+    "brandname": "Adidas",
+    "shoes": [{}]
+  }
+]
