@@ -6,7 +6,31 @@ import { SiSonarcloud } from "react-icons/si";
 import { MdCancel } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AdidasImg from "../assets/adidasimg2.png";
+import PumaImg1 from "../assets/pumaimg2.png";
+import NikeImg1 from "../assets/nikeimg7.png";
+import ConverseImg1 from "../assets/converseimg6.png";
+import ReebokImg1 from "../assets/reebokimg2.png";
+import ReebokImg4 from "../assets/reebokimg1.png";
+import AdidasImg1 from "../assets/adidasimg2.png";
+import AdidasImg2 from "../assets/adidasimg4.png";
+import PumaImg2 from "../assets/pumaimg3.png";
+import NikeImg2 from "../assets/nikeimg6.png";
+import ConverseImg2 from "../assets/converseimg4.png";
+import ReebokImg2 from "../assets/reebokimg4.png";
+import PumaImg3 from "../assets/pumaimg4.png";
+import NikeImg3 from "../assets/nikeimg10.png";
+import ReebokImg3 from "../assets/reebokimg5.png";
+import AdidasImg3 from "../assets/adidasimg5.png";
+import NikeImg4 from "../assets/nikeimg3.png";
+import ConverseImg3 from "../assets/converseimg3.png";
+import ConverseImg4 from "../assets/converseimg1.png";
+
+import PumaImg5 from "../assets/pumaimg1.png";
+import AdidasImg4 from "../assets/adidasimg1.png";
+import ConverseImg5 from "../assets/converseimg2.png";
+
+import AdidasCoverImg from '../assets/adidasimg2.png'
+
 import CatalogCover from "../assets/pxfuel.jpg";
 import Size from "../products/Size";
 import { HiHeart } from "react-icons/hi2";
@@ -15,11 +39,11 @@ import { NavLink } from "react-router-dom";
 const products = [
   {
     id: 1,
-    brand: "Nike",
-    name: "Nike Air VaporMax",
+    brand: "Puma",
+    name: "PumaImg1 Air VaporMax",
     price: 210,
     size: [7, 8, 9],
-    image: AdidasImg,
+    image: PumaImg1,
   },
   {
     id: 2,
@@ -27,15 +51,15 @@ const products = [
     name: "Adidas Boost",
     price: 190,
     size: [6, 7.5, 9.5],
-    image: AdidasImg,
+    image: AdidasImg1,
   },
   {
     id: 3,
-    brand: "Puma",
-    name: "Puma RS-X",
+    brand: "Converse",
+    name: "Converse RS-X",
     price: 180,
     size: [6, 7, 8, 10],
-    image: AdidasImg,
+    image: ConverseImg1,
   },
   {
     id: 4,
@@ -43,7 +67,7 @@ const products = [
     name: "Reebok Classic",
     price: 175,
     size: [8, 9, 10],
-    image: AdidasImg,
+    image: ReebokImg1,
   },
   {
     id: 5,
@@ -51,7 +75,7 @@ const products = [
     name: "Converse All Star",
     price: 160,
     size: [6, 7.5, 9],
-    image: AdidasImg,
+    image: ConverseImg2,
   },
   {
     id: 6,
@@ -59,15 +83,15 @@ const products = [
     name: "Nike Air Max",
     price: 170,
     size: [6, 7.5, 9],
-    image: AdidasImg,
+    image: NikeImg1,
   },
   {
     id: 7,
-    brand: "Nike",
+    brand: "Converse",
     name: "Nike Air Max",
     price: 170,
     size: [6, 7.5, 9],
-    image: AdidasImg,
+    image: ConverseImg3,
   },
   {
     id: 8,
@@ -75,7 +99,118 @@ const products = [
     name: "Nike Air Max",
     price: 170,
     size: [6, 7.5, 9, 10],
-    image: AdidasImg,
+    image: NikeImg4,
+  },
+  {
+    id: 9,
+    brand: "Adidas",
+    name: "Adidas Air Max",
+    price: 170,
+    size: [6, 7.5, 9, 10],
+    image: AdidasImg2,
+  },
+  {
+    id: 10,
+    brand: "Nike",
+    name: "Nike Air Max",
+    price: 170,
+    size: [6, 7.5, 9, 10],
+    image: NikeImg2,
+  },
+  {
+    id: 11,
+    brand: "Adidas",
+    name: "Nike Air Max",
+    price: 170,
+    size: [6, 7.5, 9, 10],
+    image: AdidasImg4,
+  },{
+    id: 12,
+    brand: "Converse",
+    name: "Converse Air Max",
+    price: 170,
+    size: [6, 7.5, 9, 10],
+    image: ConverseImg5,
+  },
+  {
+    id: 13,
+    brand: "Reebok",
+    name: "REebok Air Max",
+    price: 210,
+    size: [6, 7.5, 9, 10],
+    image: ReebokImg3,
+  },
+  {
+    id: 14,
+    brand: "Reebok",
+    name: "Reebok Air Max",
+    price: 240,
+    size: [6, 7.5, 9, 10],
+    image: ReebokImg2,
+  },
+  {
+    id: 15,
+    brand: "Puma",
+    name: "Puma Air Max",
+    price: 400,
+    size: [6, 7.5, 9, 10],
+    image: PumaImg5,
+  },
+  {
+    id: 16,
+    brand: "Puma",
+    name: "Puma Air Max",
+    price: 370,
+    size: [6, 7.5, 9, 10],
+    image: PumaImg3,
+  },
+  {
+    id: 17,
+    brand: "Puma",
+    name: "Puma Air Max",
+    price: 370,
+    size: [6, 7.5, 9, 10],
+    image: PumaImg2,
+  },
+  {
+    id: 18,
+    brand: "Nike",
+    name: "Nike Air Max",
+    price: 370,
+    size: [6, 7.5, 9, 10],
+    image: NikeImg3,
+  },
+  {
+    id: 19,
+    brand: "Adidas",
+    name: "Adidas Air Max",
+    price: 370,
+    size: [6, 7.5, 9, 10],
+    image: AdidasImg3,
+  },
+  {
+    id: 20,
+    brand: "Reebok",
+    name: "Reebok Air Max",
+    price: 370,
+    size: [6, 7.5, 9, 10],
+    image: ReebokImg2,
+  },
+  {
+    id: 21,
+    brand: "Reebok",
+    name: "Reebok Air Max",
+    price: 170,
+    size: [6, 7.5, 9, 10],
+    image: ReebokImg4,
+  },
+  {
+    id: 22,
+    brand: "Converse",
+    name: "Converse Air Max",
+    price: 230,
+    size: [6, 7.5, 9, 10],
+    image: ConverseImg4,
   },
 ];
 
@@ -220,7 +355,7 @@ const Catalog = () => {
               </div>
               <div className="absolute flex items-center justify-center left-15 top-40">
                 <img
-                  src={AdidasImg}
+                  src={AdidasCoverImg}
                   alt="Adidas Shoe"
                   className="w-full transition-transform duration-300 md:h-35 lg:h-55 hover:scale-110"
                 />
